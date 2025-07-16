@@ -47,7 +47,7 @@ function updatePlaceholder() {
 function initializeFuse(type) {
     const options = {
         keys: type === 'pdv'
-            ? ['SAP', 'REGION', 'CIUDAD', 'CADENA', 'PDV']
+            ? ['ID_INVOLVES', 'REGION', 'CIUDAD', 'CADENA', 'PDV']
             : ['SAP', 'SUBCATEGORIA', 'REFERENCIA', 'NOM_PRODUCTO'],
         threshold: 0.3,
     };
@@ -94,8 +94,8 @@ function renderResults(results) {
                         ${result.SUBCATEGORIA ? `<span class="tag subcategoria">${result.SUBCATEGORIA}</span>` : ''}
                     </div>
                     <ul>
-                        <li><strong>SAP:</strong> ${result.SAP}
-                            <i class="material-icons copy-icon" role="button" tabindex="0" aria-label="Copiar SAP" onclick="copyToClipboard('${result.SAP}')">content_copy</i>
+                        <li><strong>SAP:</strong> ${result.ID_INVOLVES}
+                            <i class="material-icons copy-icon" role="button" tabindex="0" aria-label="Copiar SAP" onclick="copyToClipboard('${result.ID_INVOLVES}')">content_copy</i>
                         </li>
                         ${result.CANAL ? `<li><strong>Canal:</strong> ${result.CANAL}</li>` : ''}
                         ${result.REFERENCIA ? `<li><strong>Referencia:</strong> ${result.REFERENCIA}</li>` : ''}

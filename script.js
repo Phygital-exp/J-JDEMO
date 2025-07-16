@@ -94,7 +94,7 @@ function renderResults(results) {
                         ${result.SUBCATEGORIA ? `<span class="tag subcategoria">${result.SUBCATEGORIA}</span>` : ''}
                     </div>
                     <ul>
-                        <li><strong>SAP:</strong> ${result.ID_INVOLVES}
+                        <li><strong>ID_INVOLVES:</strong> ${result.ID_INVOLVES}
                             <i class="material-icons copy-icon" role="button" tabindex="0" aria-label="Copiar SAP" onclick="copyToClipboard('${result.ID_INVOLVES}')">content_copy</i>
                         </li>
                         ${result.CANAL ? `<li><strong>Canal:</strong> ${result.CANAL}</li>` : ''}
